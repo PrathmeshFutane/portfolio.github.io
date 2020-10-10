@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prathmesh website</title>
+    <link rel="stylesheet" href="">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+        }
+
+        header {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(19deg, #1a52f9, magenta);
+            position: relative;
+
+        }
+
+        header:before {
+            content: "";
+            width: 570px;
+            height: 670px;
+            position: absolute;
+            top:30px;
+            border-top-left-radius: 0%;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50;
+            color: white;
+            background-image: url(prathmesh_photo.jpg);
+            background-size: cover;
+            margin-bottom: 60px;
+            opacity: 0.7;
+        }
+
+        .navbar {
+            display: flex;
+            width: 100%;
+            height: 15vh;
+            justify-content: space-around;
+            align-items: center;
+            position: absolute;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-family: sans-serif
+        }
+
+        .logo a {
+            font-size: 2.5rem;
+            text-transform: capitalize;
+            font-family: cursive;
+            padding: 20px;
+        }
+
+        .logo:hover {
+            background: transparent;
+            box-shadow: 2px 3px 8px black, -1px -1px 5px white;
+            border-radius: 20px;
+        }
+
+        .menu ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 0px 15px;
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        ul li:hover {
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+        }
+
+        .btn {
+            padding: 10px;
+            background: transparent;
+            color: white;
+            font-size: 20px;
+            border-radius: 15px;
+            box-shadow: 2px 3px 8px black, -1px -1px 5px white;
+            text-transform: capitalize;
+            padding: 10px 20px;
+        }
+
+        .btn:hover {
+            background: linear-gradient(#1a52f9, magenta);
+        }
+
+
+
+
+        /*        ///////////center content/////////////////*/
+        .center_content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-40%, -50%);
+            text-align: center;
+        }
+
+        .center_content h1 {
+            color: white;
+            font-size: 50px;
+            text-transform: capitalize;
+            font-weight: 700;
+            margin-bottom: 10px;
+            /*            z-index:1;*/
+            font-family: sans-serif;
+        }
+
+        .center_content h2 {
+            color: white;
+            font-weight: 400px;
+            font-size: 30px;
+            text-transform: capitalize;
+            font-family: sans-serif;
+            /*            z-index: 1;*/
+        }
+
+        .social_network {
+            position: absolute;
+            top: 35%;
+            right: 10%;
+            width: auto;
+            height: auto;
+        }
+
+
+        .icons {
+            background: linear-gradient(magenta, #1a52f9);
+            height: 50px;
+            width: 120px;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 20px;
+            box-shadow: 2px 3px 8px black;
+            text-transform: capitalize;
+        }
+
+        .icons:hover {
+            background: linear-gradient(#1a52f9, magenta);
+        }
+
+        .grid_img {
+            position: absolute;
+            bottom: 0px;
+            left: 55%;
+            overflow: hidden;
+            border-radius: 30px;;
+        }
+
+        footer {
+            width: 100%;
+        }
+
+        .footer-one {
+            background: linear-gradient(19deg, #1a52f9, magenta);
+            position: absolute;
+            bottom: 1x;
+            color: white;
+            font-size: 20px;
+            font-family: cursive;
+
+        }
+
+        .footer-one h5 {
+            text-align: right;
+            font-size: 30px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .footer-two,
+        p {
+            text-align: center;
+        }
+
+        /*media query*/
+        @media(max-width:700px) {
+            * {
+                overflow: visible;
+            }
+            header:before {
+            content: "";
+            width: 30px;
+            height: 400px;
+            position: absolute;
+            top:30px;
+            border-top-left-radius: 0%;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50;
+            color: white;
+            background-image: url(prathmesh_photo.jpg);
+            background-size: cover;
+            margin-bottom: 60px;
+            opacity: 0.7;
+        }
+    }
+        
+
+
+
+/*media query*/
+        @media(max-width:1100px) {
+            * {
+                overflow: visible;
+            }
+            .logo a {
+            font-size: 1.9rem;
+            text-transform: capitalize;
+            font-family: cursive;
+            padding: 20px;
+            position: relative;
+            top:5px;
+            left: 20px;
+        }
+            header:before {
+            content: "";
+            width: 370px;
+            height: 450px;
+            position: absolute;
+            top:30px;
+            border-top-left-radius: 0%;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50;
+            color: white;
+            background-image: url(prathmesh_photo.jpg);
+            background-size: cover;
+            margin-bottom: 60px;
+            opacity: 0.7;
+        }
+
+            header {
+                height: 100vh;
+                width: 100%;
+            }
+
+            .grid_img {
+                position: absolute;
+                bottom: -240px;
+                left: 0;
+                z-index: -1;
+                margin-left: 20px;
+            }
+
+            .logo:hover {
+                background: transparent;
+                box-shadow: 0px 0px 0px black, 0px 0px 0px white;
+                border-radius: 0px;
+            }
+
+            .social_network {
+                position: absolute;
+                top: 100%;
+                right: 100px;
+                width: 100px;
+                height: auto;
+            }
+
+            .icons {
+                background: linear-gradient(magenta, blue);
+                height: 50px;
+                width: 120px;
+                border-radius: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin: 20px;
+                box-shadow: 2px 3px 8px black;
+                text-transform: capitalize;
+            }
+
+
+
+            .footer-one {
+                background: linear-gradient(19deg, magenta, #1a52f9);
+                position: absolute;
+                bottom: -470px;
+                color: white;
+                font-size: 20px;
+                font-family: cursive;
+
+
+            }
+
+            .footer-one h5 {
+                text-align: right;
+                font-size: 30px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+            }
+
+            .footer-two,
+            p {
+                text-align: center;
+            }
+
+            .foot {
+                display: flex;
+                height: 100%;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="" target="_blank">Jack Technical</a>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">gallery</a></li>
+                    <li><a href="">about us</a> </li>
+                    <li><a href="">services</a></li>
+                </ul>
+            </div>
+
+            <div class="contact_btn">
+                <a href=""><span class="btn">contact </span></a>
+            </div>
+        </nav>
+
+
+        <div class="center_content">
+            <h1>Hello This is prathmesh</h1>
+            <h2>fullstack developer</h2>
+        </div>
+
+        <div class="social_network">
+            <div class="icons">
+                <a href="">facebook</a>
+            </div>
+            <div class="icons">
+                <a href="">instagram</a>
+            </div>
+            <div class="icons">
+                <a href="">twitter</a>
+            </div>
+            <div class="icons">
+                <a href="">youtube</a>
+            </div>
+        </div>
+
+        <div class="grid_img">
+            <img src="newimg.jpg" height="170px" width="270px" alt="">
+        </div>
+
+    </header>
+
+    <div class="foot">
+        <footer class="page-footer footer-one">
+            <div class="center">
+                <h5 class="white-text">Prathmesh Futane</h5>
+                <p class="grey-text text-lighten-4">Visit our other links and show your support to us so we can server you as we can.</p>
+            </div>
+            <br>
+            <div class="footer-copyright footer-two">
+                <div class="container">
+                    © 2014 Copyright Text
+                    <a class="grey-text text-lighten-4 right" href="#!">Jack Technical</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body></html>
